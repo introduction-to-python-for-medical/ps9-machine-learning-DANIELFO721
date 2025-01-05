@@ -7,7 +7,6 @@ from sklearn.metrics import accuracy_score
 
 df = pd.read_csv('parkinsons.csv')
 parkinsons = df.dropna()
-parkinsons.head()
 
 x = parkinsons[['MDVP:Fo(Hz)', 'MDVP:Flo(Hz)']]
 y = parkinsons['status']
